@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>title</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  </head>
+  <body>
+      {% block navigation %}
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>Policies</li>
+            <li>Reports</li>
+            <li>Other...</li>
+          </ul>
+        </nav>
+      {% endblock %}
+      {% block content %}
+      {% endblock %}
+  </body>
+</html>
