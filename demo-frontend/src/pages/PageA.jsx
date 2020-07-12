@@ -1,6 +1,6 @@
-import React from "react";
+import React, { ReactDOM } from "react";
 
-import Header from "src/components/Header";
+import Header from "../components/Header";
 
 const PageA = props => (
     <React.Fragment>
@@ -14,4 +14,9 @@ const PageA = props => (
     </React.Fragment>
 );
 
-export default PageA;
+ReactDOM.render(
+  <React.StrictMode>
+    <PageA />
+  </React.StrictMode>,
+  document.getElementById('root')
+);

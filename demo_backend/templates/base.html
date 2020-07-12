@@ -11,17 +11,20 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
   </head>
   <body>
-      {% block navigation %}
-        <nav>
-          <ul>
-            <li>Home</li>
-            <li>Policies</li>
-            <li>Reports</li>
-            <li>Other...</li>
-          </ul>
-        </nav>
-      {% endblock %}
-      {% block content %}
-      {% endblock %}
+    {% block navigation %}
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Policies</li>
+          <li>Reports</li>
+          <li>Other...</li>
+        </ul>
+      </nav>
+    {% endblock %}
+    {% block content %}
+      <div id="root"></div>
+    {% endblock %}
+    {% block scripts %}
+    {% endblock %}
   </body>
 </html>
